@@ -23,7 +23,7 @@ export const Header = () => {
   return (
     <MDBNavbar className='font shadow-0' expand='lg' light bgColor='white'>
       <MDBContainer fluid>
-        <MDBNavbarBrand href='#'> <b>cloudy.</b> </MDBNavbarBrand>
+        <MDBNavbarBrand href='/'> <b>cloudy.</b> </MDBNavbarBrand>
 
         <MDBNavbarToggler
           aria-controls='navbarSupportedContent'
@@ -37,12 +37,12 @@ export const Header = () => {
         <MDBCollapse navbar show={showBasic}>
           <MDBNavbarNav className='mr-auto mb-2 mb-lg-0' style={{textAlign: 'center'}}>
             <MDBNavbarItem>
-              <MDBNavbarLink active aria-current='page' href='#'>
+              <MDBNavbarLink active aria-current='page' href='/'>
                 Home
               </MDBNavbarLink>
             </MDBNavbarItem>
             <MDBNavbarItem>
-              <MDBNavbarLink href='#'>About</MDBNavbarLink>
+              <MDBNavbarLink href='/about'>About</MDBNavbarLink>
             </MDBNavbarItem>
           </MDBNavbarNav>
         </MDBCollapse>

@@ -1,6 +1,7 @@
 import React, {useEffect, useState, useRef} from 'react';
 import axios from 'axios';
 import { Header } from './components/Header';
+import { About } from './components/About';
 import { 
   MDBInputGroup, 
   MDBInputGroupElement, 
@@ -15,6 +16,12 @@ import {
   MDBCol,
   MDBTable,
   MDBTableBody } from 'mdb-react-ui-kit';
+
+import {
+  BrowserRouter as Router,
+  Route,
+  Routes
+} from 'react-router-dom';
 import './App.css';
 
 function App() {
@@ -29,8 +36,13 @@ function App() {
   // })
   return (
     <>
-      <Header></Header>
-      <Search></Search>
+      <Router>
+        <Header></Header>
+        <Routes>
+          <Route exact path="/about" element={<About/>}/>
+          <Route exact path="/" element={<Search/>}/>
+        </Routes>
+      </Router>
     </>
   );
 }
@@ -40,7 +52,7 @@ function Search() {
   const [city, setCity] = useState([]);
   const [atm, setAtm] = useState([]);
   const [wind, setWind] = useState([]);
-  const [flag, setFlag] = useState(1);
+  const [flag, setFlag] = useState(0);
   const [name, setName] = useState('');
   const [sys, setSys] = useState([]);
   const [cor, setCor] = useState([]);
@@ -61,6 +73,7 @@ function Search() {
       })
       .catch(err => {
         console.log(err)
+        alert('Enter a valid city name')
       })
       setFormValue('');
     }
