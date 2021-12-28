@@ -1,0 +1,29 @@
+.legendStyle {
+    color: white;
+    text-align: center;
+}
+
+.good {
+    background-color: #A6CF98;
+    
+}
+
+.moderate {
+    background-color: #FFE400;
+}
+
+.unhealthy1 {
+    background-color: #FF8E00;
+}
+
+.unhealthy2 {
+    background-color: #CD1818;
+}
+
+.unhealthy3 {
+    background-color: #9B0000;
+}
+
+.hazardous {
+    background-color: #4F091D;
+}

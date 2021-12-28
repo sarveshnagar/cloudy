@@ -37,7 +37,7 @@ export const Header = () => {
         <MDBCollapse navbar show={showBasic}>
           <MDBNavbarNav className='mr-auto mb-2 mb-lg-0' style={{textAlign: 'center'}}>
             <MDBNavbarItem>
-              <MDBNavbarLink active aria-current='page' href='/'>
+              <MDBNavbarLink  aria-current='page' href='/'>
                 Home
               </MDBNavbarLink>
             </MDBNavbarItem>
