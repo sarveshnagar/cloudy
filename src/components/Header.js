@@ -23,7 +23,7 @@ export const Header = () => {
   return (
     <MDBNavbar className='font shadow-0' expand='lg' light bgColor='white'>
       <MDBContainer fluid>
-        <MDBNavbarBrand href='/'> <b>cloudy.</b> </MDBNavbarBrand>
+        <MDBNavbarBrand href='/' className='me-3'> <b>cloudy.</b> </MDBNavbarBrand>
 
         <MDBNavbarToggler
           aria-controls='navbarSupportedContent'
